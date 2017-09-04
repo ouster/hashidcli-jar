@@ -1,12 +1,29 @@
 # hashidcli-jar
-example generating a hashid in jar using gradle
+# Example generating a hashid in jar using gradle
 
-To build:
+## To build:
 
 gradle clean build
 
-To Run:
+## To Run:
 
 java -jar ./build/libs/hashidcli-1.0-SNAPSHOT.jar
 
 Generates hashids on timestamp, counter and random number
+
+Example output:
+
+```
+l=1504512743744, hash=6NQMP35VLGB9RWFJZZL
+l=1504512743744, hash=79725OVZP0UQOJUOV05
+l=1504512743744, hash=6NQMP35VLGB9R5IOD73
+l=1504512743744, hash=ODWVJ5E4OGTQ72AGNQ
+l=1504512743744, hash=32MLOE5PZ7B2EJUMN3
+l=1504512743744, hash=VD6GJNPE8RTDRZTGRL
+l=1504512743744, hash=VD6GJNPE8RTDRVSZ9WY
+l=1504512743744, hash=9MODW05QPGS70EAOP89
+l=1504512743744, hash=NDWLJPZQRVTMLQHGQ8W
+l=1504512743745, hash=07NJQV2D9WTGVWAO2W7
+l=1504512743745, hash=D5ZR3YWLPDT7QVSD9N3
+l=1504512743745, hash=RDWPJG32QLSQ8VHQ80G
+```
