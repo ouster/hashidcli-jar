@@ -16,7 +16,7 @@ import java.security.SecureRandom;
 public class HashIdGenerator {
 
     static long counter = 0L;
-    static int MAX_RANDOM = 100000;
+    static int MAX_RANDOM = 1000000;
 
     public static void main(String[] args) {
 
@@ -29,8 +29,8 @@ public class HashIdGenerator {
 
             counter++;
 
-            long ts = System.currentTimeMillis();
-            String hash = hashids.encode(ts, counter, random.nextInt(MAX_RANDOM));
+            long ts = System.currentTimeMillis()/1000;
+            String hash = hashids.encode(random.nextInt(MAX_RANDOM));
 
             System.out.format("l=%d, hash=%s\n", ts, hash);
         }
